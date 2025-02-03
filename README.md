@@ -1,0 +1,3 @@
+# Unhandled Network Error on Background Thread in Swift
+
+This repository demonstrates a common error in asynchronous Swift programming: handling network errors without considering thread safety. The `fetchData` function simulates a network request that randomly fails. The error is that the completion handler is called on a background thread, which can lead to crashes or unexpected behavior if UI updates are attempted within the completion handler.
